@@ -17,8 +17,8 @@ function handleForm (event) {
     newArray.sort();
     console.log(newArray)
     newArray.forEach(function(grocery) {
-        const paragraph = document.createElement("p");
-        paragraph.append(grocery);
+        const paragraph = document.createElement("p")
+        paragraph.append(grocery[0].toUpperCase() + grocery.slice(1))
         document.body.append(paragraph);
     });
 
